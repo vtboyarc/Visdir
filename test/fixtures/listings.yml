@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  budget: MyString
+  low_budget: MyString
+  high_budget: MyString
+  location: MyString
+  category: MyString
+  photo: MyString
+
+two:
+  budget: MyString
+  low_budget: MyString
+  high_budget: MyString
+  location: MyString
+  category: MyString
+  photo: MyString
