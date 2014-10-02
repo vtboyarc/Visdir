@@ -28,6 +28,8 @@ gem 'rmagick', :require => 'RMagick'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+gem 'delayed_job_active_record'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
