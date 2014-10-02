@@ -3,16 +3,6 @@ class UserMailer < ActionMailer::Base
   
   def welcome(user)
     @user = user
-    mail(:to => user.email, :subject => "welcome, dear human")
-  end
-    
-    def task(user)
-      @user = user
-      mail(:to => user.email, :subject => "You have been assigned a task")
-    end
-    
-    def update_task(user)
-      @user = user
-      mail(:to => user.email, :subject => "A Task has been updated")   
+    mail(:to => user.email, :subject => "welcome to Visdir, photographer!")
   end
 end
