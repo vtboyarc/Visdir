@@ -5,3 +5,5 @@ class Listing < ActiveRecord::Base
   
   mount_uploader :photo, ImageUploader #did rails g uploader photo
 end
+
+#remove low_ and high_ budget fields? just use budget? or make them boolean?
