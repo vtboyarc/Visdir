@@ -18,13 +18,13 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     
     if @user.save
+      Notifier.delay.signup(@user) #not sure if this goes here...
       UserMailer.welcome(@user).deliver #goes to views, user_mailer, welcome
       redirect_to users_path(@user.id)
     else
       render "new"
     end
   end
-  
   def edit
     @user = User.find(params[:id])
     if @user != current_user
