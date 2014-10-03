@@ -13,10 +13,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-
-$(document).ready(function(){
-  $("#cards").on("click", ".card-fav", function(e){
-    alert("Fav/Unfav!");
-    e.preventDefault();
-  });
-})
