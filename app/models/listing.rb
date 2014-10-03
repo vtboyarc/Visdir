@@ -1,5 +1,5 @@
 class Listing < ActiveRecord::Base
-  attr_accessible :budget, :category, :high_budget, :location, :low_budget, :photo, :title
+  attr_accessible :budget, :category, :high_budget, :location, :low_budget, :photo, :title, :avatar
   
   belongs_to :user
   
