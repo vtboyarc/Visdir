@@ -8,3 +8,5 @@ class User < ActiveRecord::Base
   validates :email, uniqueness: true
   validates :name, :email, :password, :password_confirmation, presence: true
 end
+# need to do migration, remove the 2 password fields above, add: password_digest:string
+#this is used by bcyrpt. 
