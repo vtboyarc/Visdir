@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141002014034) do
+ActiveRecord::Schema.define(:version => 20141007021036) do
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0, :null => false
@@ -51,11 +51,10 @@ ActiveRecord::Schema.define(:version => 20141002014034) do
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.string   "password"
-    t.string   "password_confirmation"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
     t.boolean  "pro"
+    t.string   "password_digest"
   end
 
 end
